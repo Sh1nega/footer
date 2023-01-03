@@ -42,20 +42,38 @@
             </div>
 
             <div class="right box">
-                <h2>Contact us</h2>
+                <!--<h2>Contact us</h2>-->
+                <h2>PayPal</h2>
                 <div class="content">
                     <form action="#">
-                        <div class="email">
+                        <!--<div class="email">
                             <div class="text">Email <span class="required">*</span></div>
                             <input type="email" required>
                         </div>
                         <div class="msg">
                             <div class="text">Message <span class="required">*</span></div>
-                            <textarea cols="25" rows="2" required></textarea>
+                            <textarea cols="25" rows="2" style="resize: vertical" required></textarea>
+                        </div> -->
+                        <div id="donate-button-container" class="btn">
+                            <button>
+                            <div id="donate-button"></div>
+                            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                            <script>
+                            PayPal.Donation.Button({
+                            env:'production',
+                            hosted_button_id:'6JGW3VYKHSR7L',
+                            image: {
+                            src:'https://pics.paypal.com/00/s/ZjJmNDg1MmYtZmM3Ny00NjI5LTk0MGUtM2VkOGRjMTc3MzNk/file.PNG',
+                            alt:'Donate with PayPal button',
+                            title:'PayPal - The safer, easier way to pay online!',
+                            }
+                            }).render('#donate-button');
+                            </script>
+                            </button>
                         </div>
-                        <div class="btn">
+                        <!--<div class="btn">
                             <button type="submit">Send</button>
-                        </div>
+                        </div>-->
                     </form>
                 </div>
             </div>
