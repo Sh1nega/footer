@@ -106,6 +106,9 @@ footer{
 .right form .msg{
     margin-top: 10px;
 }
+.required{
+    color: #f12020;
+}
 .right form input, .right form textarea{
     width: 100%;
     font-size: 1.0625rem;
