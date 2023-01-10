@@ -15,7 +15,6 @@
 }
 
 nav{
-    position: fixed;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -36,7 +35,7 @@ nav{
 }
 
 .carousel {
-  position: fixed;
+  position: relative;
   width: 20vh;
   height: 45px;
   text-align: center;
@@ -45,7 +44,8 @@ nav{
 
 }
 .carousel .change_outer {
-  position: fixed;
+  position: relative;
+  left: 0;
   top: 0;
   text-align: center;
   height: 45px;
@@ -254,8 +254,8 @@ textarea{
     .frame {
         margin-top: 2rem;
     }
-    .carousel .change_outer {
-        left: 45%;
+    .element {
+        justify-content: center;
     }
 
     footer{
