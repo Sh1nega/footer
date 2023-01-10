@@ -23,7 +23,7 @@ nav{
 }
 
 .frame {
-  margin-top: 4px;
+  margin-top: .5rem;
   align-items: center;
   height: 8vh;
   border-radius: 2px;
@@ -78,7 +78,6 @@ nav{
     transform: translateY(-180px);
   }
 }
-
 @keyframes rotate {
   0%, 20% {
     transform: translateY(0);
@@ -247,6 +246,13 @@ textarea{
 }
 
 @media screen and (max-width: 900px){
+    nav{
+        justify-content: center;
+    }
+    .frame {
+        margin-top: 2rem;
+    }
+
     footer{
         position: relative;
         bottom: 0px;
