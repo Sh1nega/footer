@@ -19,7 +19,7 @@ nav{
     justify-content: start;
     align-items: center;
     background: var(--background);
-    height: 8vh;
+    height: 3rem;
 }
 
 .frame {
@@ -35,17 +35,17 @@ nav{
 }
 
 .carousel {
-  position: relative;
+  position: fixed;
   width: 20vh;
-  text-align: center;
-  font-size: 30px;
-  line-height: 45px;
   height: 45px;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 45px;
+
 }
 .carousel .change_outer {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 40%;
   text-align: center;
   height: 45px;
   overflow: hidden;
@@ -247,10 +247,14 @@ textarea{
 
 @media screen and (max-width: 900px){
     nav{
+        height: 3rem;
         justify-content: center;
     }
     .frame {
         margin-top: 2rem;
+    }
+    .carousel .change_outer {
+        left: 45%;
     }
 
     footer{
