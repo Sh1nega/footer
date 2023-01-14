@@ -25,6 +25,7 @@ ul a{
     font-weight: 500;
 }
 ul a:hover{
+    transition: .4s;
     background:rgba(241, 32, 32, 0.500);
 }
 #logo{
