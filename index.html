@@ -10,30 +10,40 @@
     <title>Sumo</title>
 </head>
 <body>
-    <nav>
-        <div class="frame">
-            <div class="center">
-              <div class="carousel">
-                      <div class="change_outer">
-                          <div class="change_inner">
-                              <div class="element">Olá</div>
-                              <div class="element">Hi</div>
-                              <div class="element">Salut</div>
-                              <div class="element">你好</div>
-                              <div class="element">Olá</div>
-                          </div>
-                      </div>
-                  </div>
-            </div>
-          </div>
-    </nav>
+    <header id="header">
+        <img src="images/logo.png" alt="" id="logo">
+        <nav id="nav">
+            <!--<div class="frame">
+                <div class="center">
+                <div class="carousel">
+                        <div class="change_outer">
+                            <div class="change_inner">
+                                <div class="element">Olá</div>
+                                <div class="element">Hi</div>
+                                <div class="element">Salut</div>
+                                <div class="element">你好</div>
+                                <div class="element">Olá</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="burguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="#">#OPÇÃO1</a></li>
+                <li><a href="#">#OPÇÃO2</a></li>
+                <li><a href="#">#OPÇÃO3</a></li>
+                <li><a href="#">#OPÇÃO4</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <center>
     <main>
-        <h2>Coming soon</h2> <img src="images/comingsoon.png" alt="Sumo-Logo">
+        <h2>Coming soon</h2>
     </main>
-    </center>
-    
+
     <footer>
         <div class="main-content">
             <div class="left box">
@@ -110,5 +120,6 @@
             </center>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
